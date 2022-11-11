@@ -1,0 +1,21 @@
+spring:
+  kafka:
+    consumer:
+      bootstrap-servers: localhost:9092
+      group-id: myGroup
+      auto-offset-reset: earliest
+    producer:
+      bootstrap-servers: localhost:9092
+  servlet:
+  application:
+    name: Kafka-Sample
+logging:
+  level:
+    io.Kafka: INFO
+server:
+  port: ${SERVER_PORT:8080}
+
+
+
+
+
