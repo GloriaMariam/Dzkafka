@@ -1,4 +1,4 @@
-package com.kafkaSample.kafkaSample.Service;
+package com.kafka.sample.Service;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +18,7 @@ public class Producer {
     @Scheduled(fixedDelay = 6000)
     public void publishToTopic() {
         String message = "Hi This is my first kafka application";
-       log.info("published to topic : ",topic);
+       log.info("published to topic {} ",topic);
         this.kafkaTemplate.send(topic, message);
     }
 }

@@ -6,12 +6,11 @@ spring:
       auto-offset-reset: earliest
     producer:
       bootstrap-servers: localhost:9092
-  servlet:
   application:
     name: Kafka-Sample
 logging:
   level:
-    io.Kafka: INFO
+    com.kafka: INFO
 server:
   port: ${SERVER_PORT:8080}
 

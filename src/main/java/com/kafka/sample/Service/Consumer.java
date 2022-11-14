@@ -1,4 +1,4 @@
-package com.kafkaSample.kafkaSample.Service;
+package com.kafka.sample.Service;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.kafka.annotation.KafkaListener;
@@ -19,6 +19,6 @@ public class Consumer {
 
     @KafkaListener(topics = "myTopic2", groupId = "myGroup")
     public void consumeFromTopic2(String message) {
-        log.info("SecondConsumed message {} ", message);
+        log.info("ThirdConsumed message {} ", message);
     }
 }
